@@ -2,19 +2,30 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Filtro de Fecha</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtro de Fecha | Reporte Diario</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <h1>Reporte Diario</h1>
-    <p>Selecciona una fecha para ver la información correspondiente.</p>
+    <header>
+      <h1>📅 Reporte Diario</h1>
+      <p>Filtra los datos según la fecha que selecciones.</p>
+    </header>
 
-    <label for="fecha">Filtrar por fecha:</label>
-    <input type="date" id="fecha" name="fecha">
-    
-    <div id="resultado"></div>
+    <section class="filtro">
+      <label for="fecha">Selecciona una fecha:</label>
+      <input type="date" id="fecha">
+    </section>
+
+    <section id="resultado" class="resultado">
+      <!-- Aquí se mostrará la fecha seleccionada -->
+    </section>
   </div>
+
+  <footer>
+    <p>© 2025 - Proyecto de ejemplo</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
